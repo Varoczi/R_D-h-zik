@@ -1,54 +1,114 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Telex copy</title>
-        <meta charset="UTF-8">
-        <style>
-            html {
-                scroll-behavior: smooth;
-            }
 
-            a {
-                text-decoration: none;
-                color: black;
-            }
+<head>
+    <title>Telex copy</title>
+    <meta charset="UTF-8">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
 
-            button {
-                text-align: center;
-                position: relative;
-                margin: 2rem 40rem;
-            }
-        </style>
-    </head>
-    <body>
-        <nav id="nav">
-            <button type="button">
-                <a href="#footer">Kattints ide hogy legörgess</a>
-            </button>
-        </nav>
-        <h1>Rangos európai újságíródíjat nyert kollégánk, Bolcsó Dániel</h1>
-        <h3>Az Év Európai Tudományos Újságírója díj második helyezését szerezte meg a Telex újságírója, Bolcsó Dániel, derült ki az elismerést odaítélő Európai Tudományos Újságíró Szövetség (European Federation for Science Journalism) közleményéből. A szervezet három cikket díjazott kollégánk közelmúltbeli munkái közül:</h3>
-        <p> -A Favipiravir körül kialakult vitáról, valamint az Országos Gyógyszerészeti és Élelmezés-egészségügyi Intézet (OGYÉI) gyógyszer hatásosságát vitató újságcikkek miatt tett feljelentéséről szólót.</p>
-        <p> -A Covid-19 betegség kezelésére alkalmazott, a plazmaterápiával kapcsolatos, még a kidolgozója szerint is megalapozott kételyekről szólót.</p>
-        <p> -Valamint a Herbapirin nevű, tudományosan megalapozatlan és jogilag is problémás módon hirdetett étrend-kiegészítőről szólót.</p>
-        <h3>Bolcsó Dániel 2014 óta dolgozik újságíróként. Pályáját az Indexnél kezdte, majd a szerkesztőség tagjainak többségével együtt távozott 2020-ban, a Telex indulása óta dolgozik lapunknál szerkesztő-újságíróként. Munkásságát korábban Junior Prima-díjjal, valamint Hevesi Endre-díjjal is elismerték. Volt az év információbiztonsági újságírója, valamint az év informatikai újságírója is, 2021 júniusában Minőségi Újságírásért Díjat kapott a koronavírus-gyorstalpaló cikkéért. Idén májusban Akadémiai Újságírói Díjat kapott.</h3>
-        <h3>Az Év Európai Tudományos Újságírója idén Niki Korteveg, az NRC címmel megjelenő holland napilap tudományos újságírója, a harmadik helyezett pedig Lea Udovč szlovén újságíró lett, akinek egyik kiemelt munkája a Karikó Katalin Nobel-díjas tudóssal készített interjú volt.</h3>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Eos itaque ex iusto fuga possimus sint natus corporis tenetur ratione suscipit nisi qui quas ipsum, nostrum distinctio quod perferendis officia. Maiores.</h3>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sequi illum dolorum cumque temporibus rerum reprehenderit neque perspiciatis, nam consequuntur nesciunt autem, libero, labore consequatur. Minima omnis voluptate ullam tempora optio?</h3>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Eos itaque ex iusto fuga possimus sint natus corporis tenetur ratione suscipit nisi qui quas ipsum, nostrum distinctio quod perferendis officia. Maiores.</h3>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sequi illum dolorum cumque temporibus rerum reprehenderit neque perspiciatis, nam consequuntur nesciunt autem, libero, labore consequatur. Minima omnis voluptate ullam tempora optio?</h3>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Eos itaque ex iusto fuga possimus sint natus corporis tenetur ratione suscipit nisi qui quas ipsum, nostrum distinctio quod perferendis officia. Maiores.</h3>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sequi illum dolorum cumque temporibus rerum reprehenderit neque perspiciatis, nam consequuntur nesciunt autem, libero, labore consequatur. Minima omnis voluptate ullam tempora optio?</h3>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Eos itaque ex iusto fuga possimus sint natus corporis tenetur ratione suscipit nisi qui quas ipsum, nostrum distinctio quod perferendis officia. Maiores.</h3>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sequi illum dolorum cumque temporibus rerum reprehenderit neque perspiciatis, nam consequuntur nesciunt autem, libero, labore consequatur. Minima omnis voluptate ullam tempora optio?</h3>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Eos itaque ex iusto fuga possimus sint natus corporis tenetur ratione suscipit nisi qui quas ipsum, nostrum distinctio quod perferendis officia. Maiores.</h3>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sequi illum dolorum cumque temporibus rerum reprehenderit neque perspiciatis, nam consequuntur nesciunt autem, libero, labore consequatur. Minima omnis voluptate ullam tempora optio?</h3>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Eos itaque ex iusto fuga possimus sint natus corporis tenetur ratione suscipit nisi qui quas ipsum, nostrum distinctio quod perferendis officia. Maiores.</h3>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sequi illum dolorum cumque temporibus rerum reprehenderit neque perspiciatis, nam consequuntur nesciunt autem, libero, labore consequatur. Minima omnis voluptate ullam tempora optio?</h3>
-        <footer id="footer">
-            <button type="button">
-                <a href="#nav">Kattints ide hogy felgörgess</a>
-            </button>
-        </footer>
-    </body>
+        a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            height: 3rem;
+            text-align: center;
+            
+        }
+
+        .gomb {
+            width: 20rem;
+            height: 3rem;
+            padding: 0.5rem 1rem;
+            margin: auto;
+            border-radius: 20rem;
+            background-color: beige;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="gomb">
+            <a href="#footer">
+                <div class="text">
+                    Kattints ide hogy legörgess
+                </div>
+            </a>
+        </div>
+    </nav>
+    <h1>Rangos európai újságíródíjat nyert kollégánk, Bolcsó Dániel</h1>
+    <h3>Az Év Európai Tudományos Újságírója díj második helyezését szerezte meg a Telex újságírója, Bolcsó Dániel,
+        derült ki az elismerést odaítélő Európai Tudományos Újságíró Szövetség (European Federation for Science
+        Journalism) közleményéből. A szervezet három cikket díjazott kollégánk közelmúltbeli munkái közül:</h3>
+    <p> -A Favipiravir körül kialakult vitáról, valamint az Országos Gyógyszerészeti és Élelmezés-egészségügyi Intézet
+        (OGYÉI) gyógyszer hatásosságát vitató újságcikkek miatt tett feljelentéséről szólót.</p>
+    <p> -A Covid-19 betegség kezelésére alkalmazott, a plazmaterápiával kapcsolatos, még a kidolgozója szerint is
+        megalapozott kételyekről szólót.</p>
+    <p> -Valamint a Herbapirin nevű, tudományosan megalapozatlan és jogilag is problémás módon hirdetett
+        étrend-kiegészítőről szólót.</p>
+    <h3>Bolcsó Dániel 2014 óta dolgozik újságíróként. Pályáját az Indexnél kezdte, majd a szerkesztőség tagjainak
+        többségével együtt távozott 2020-ban, a Telex indulása óta dolgozik lapunknál szerkesztő-újságíróként.
+        Munkásságát korábban Junior Prima-díjjal, valamint Hevesi Endre-díjjal is elismerték. Volt az év
+        információbiztonsági újságírója, valamint az év informatikai újságírója is, 2021 júniusában Minőségi
+        Újságírásért Díjat kapott a koronavírus-gyorstalpaló cikkéért. Idén májusban Akadémiai Újságírói Díjat kapott.
+    </h3>
+    <h3>Az Év Európai Tudományos Újságírója idén Niki Korteveg, az NRC címmel megjelenő holland napilap tudományos
+        újságírója, a harmadik helyezett pedig Lea Udovč szlovén újságíró lett, akinek egyik kiemelt munkája a Karikó
+        Katalin Nobel-díjas tudóssal készített interjú volt.</h3>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Eos itaque ex iusto fuga possimus sint natus
+        corporis tenetur ratione suscipit nisi qui quas ipsum, nostrum distinctio quod perferendis officia. Maiores.
+    </h3>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sequi illum dolorum cumque temporibus rerum
+        reprehenderit neque perspiciatis, nam consequuntur nesciunt autem, libero, labore consequatur. Minima omnis
+        voluptate ullam tempora optio?</h3>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Eos itaque ex iusto fuga possimus sint natus
+        corporis tenetur ratione suscipit nisi qui quas ipsum, nostrum distinctio quod perferendis officia. Maiores.
+    </h3>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sequi illum dolorum cumque temporibus rerum
+        reprehenderit neque perspiciatis, nam consequuntur nesciunt autem, libero, labore consequatur. Minima omnis
+        voluptate ullam tempora optio?</h3>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Eos itaque ex iusto fuga possimus sint natus
+        corporis tenetur ratione suscipit nisi qui quas ipsum, nostrum distinctio quod perferendis officia. Maiores.
+    </h3>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sequi illum dolorum cumque temporibus rerum
+        reprehenderit neque perspiciatis, nam consequuntur nesciunt autem, libero, labore consequatur. Minima omnis
+        voluptate ullam tempora optio?</h3>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Eos itaque ex iusto fuga possimus sint natus
+        corporis tenetur ratione suscipit nisi qui quas ipsum, nostrum distinctio quod perferendis officia. Maiores.
+    </h3>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sequi illum dolorum cumque temporibus rerum
+        reprehenderit neque perspiciatis, nam consequuntur nesciunt autem, libero, labore consequatur. Minima omnis
+        voluptate ullam tempora optio?</h3>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Eos itaque ex iusto fuga possimus sint natus
+        corporis tenetur ratione suscipit nisi qui quas ipsum, nostrum distinctio quod perferendis officia. Maiores.
+    </h3>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sequi illum dolorum cumque temporibus rerum
+        reprehenderit neque perspiciatis, nam consequuntur nesciunt autem, libero, labore consequatur. Minima omnis
+        voluptate ullam tempora optio?</h3>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Eos itaque ex iusto fuga possimus sint natus
+        corporis tenetur ratione suscipit nisi qui quas ipsum, nostrum distinctio quod perferendis officia. Maiores.
+    </h3>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sequi illum dolorum cumque temporibus rerum
+        reprehenderit neque perspiciatis, nam consequuntur nesciunt autem, libero, labore consequatur. Minima omnis
+        voluptate ullam tempora optio?</h3>
+    <footer id="footer">
+        <div class="gomb">
+            <a href="#nav">
+                <div class="text">
+                    Kattints ide hogy felgörgess
+                </div>
+            </a>
+        </div>
+    </footer>
+</body>
+
 </html>
