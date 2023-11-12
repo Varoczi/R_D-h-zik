@@ -2,10 +2,21 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    margin: 1rem;
+}
+
 a {
     text-decoration: none;
     color: black;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 3rem;
     text-align: center;
     
@@ -20,10 +31,6 @@ a {
     background-color: beige;
     justify-content: center;
     align-items: center;
-}
-
-.text {
-    margin-top: 1rem;
 }
 
 .form {
