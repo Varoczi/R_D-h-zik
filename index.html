@@ -4,35 +4,7 @@
 <head>
     <title>Telex copy</title>
     <meta charset="UTF-8">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-            display: block;
-            height: 3rem;
-            text-align: center;
-            
-        }
-
-        .gomb {
-            width: 20rem;
-            height: 3rem;
-            padding: 0.5rem 1rem;
-            margin: auto;
-            border-radius: 20rem;
-            background-color: beige;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .text {
-            margin-top: 1rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -45,6 +17,7 @@
             </a>
         </div>
     </nav>
+    <article>
     <h1>Rangos európai újságíródíjat nyert kollégánk, Bolcsó Dániel</h1>
     <h3>Az Év Európai Tudományos Újságírója díj második helyezését szerezte meg a Telex újságírója, Bolcsó Dániel,
         derült ki az elismerést odaítélő Európai Tudományos Újságíró Szövetség (European Federation for Science
@@ -99,7 +72,18 @@
     </h3>
     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sequi illum dolorum cumque temporibus rerum
         reprehenderit neque perspiciatis, nam consequuntur nesciunt autem, libero, labore consequatur. Minima omnis
-        voluptate ullam tempora optio?</h3>
+        voluptate ullam tempora optio?
+     </h3>
+    </article>
+    <div class="form">
+        <form name="Cikk küldése ismerősnek">
+            <input type="text" required>
+            <input type="tel">
+            <input type="email" required>
+            <input type="number">
+            <input type="text">
+        </form>
+    </div>
     <footer id="footer">
         <div class="gomb">
             <a href="#nav">

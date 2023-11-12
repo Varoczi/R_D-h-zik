@@ -25,3 +25,12 @@ a {
 .text {
     margin-top: 1rem;
 }
+
+.form {
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    display: block;
+}
