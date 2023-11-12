@@ -1,0 +1,27 @@
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    height: 3rem;
+    text-align: center;
+    
+}
+
+.gomb {
+    width: 20rem;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    border-radius: 20rem;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    margin-top: 1rem;
+}
