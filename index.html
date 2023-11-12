@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body id="up">
     <nav>
@@ -74,20 +77,19 @@
      </h3>
     </article>
     <div class="form">
-        <form name="Cikk küldése ismerősnek">
-            <label>Név:</label><input type="text" required>
-            <input type="tel">
-            <input type="email" required>
-            <input type="number">
-            <input type="text">
+        <form name="Cikk küldése ismerősnek" action="">
+            <label for="name">Név:</label><input type="text" id="name" name="name" required>
+            <label for="tel">Telefon:</label><input type="tel" id="tel" name="tel">
+            <label for="email">E-mail:</label><input type="email" required id="email" name="email">
+            <label for="age">Kor:</label><input type="number" id="age" name="age">
+            <label for="message">Üzenet:</label><input type="text" id="message" name="message">
+            <input type="submit">
         </form>
     </div>
     <footer id="footer">
         <div class="gomb">
             <a href="#up">
-                <div class="text">
                     Kattints ide hogy felgörgess
-                </div>
             </a>
         </div>
     </footer>

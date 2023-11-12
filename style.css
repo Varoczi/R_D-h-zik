@@ -5,6 +5,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 article {
@@ -34,10 +35,13 @@ a {
 }
 
 .form {
+    display: flex;
+    margin: 2rem;
     align-items: center;
     justify-content: center;
 }
 
 input {
     display: block;
+    margin: 6px;
 }
