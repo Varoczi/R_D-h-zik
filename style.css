@@ -11,6 +11,9 @@
   body {
     font-size: 1rem;
   }
+  nav {
+    justify-content: center;
+  }
 }
 
 html {
@@ -156,4 +159,14 @@ body.light-mode {
 
 .light-mode {
   color: rgb(28, 27, 27);
+}
+
+body.light-mode nav,
+body.light-mode footer {
+  background-color: aliceblue;
+}
+
+body.light-mode nav a,
+body.light-mode footer a {
+  color: black;
 }
