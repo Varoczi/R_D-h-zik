@@ -16,4 +16,7 @@ function toggleLightMode() {
     labels.forEach(function(label) {
         label.classList.toggle('light-mode');
     });
+
+    const modeSwitchButton = document.querySelector('.mode-switch');
+    modeSwitchButton.classList.toggle('light-mode');
 }

@@ -33,9 +33,9 @@ article {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content:baseline;
   align-items: center;
-}
+} 
 
 h1 {
   text-align: center;
