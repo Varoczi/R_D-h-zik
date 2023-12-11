@@ -162,6 +162,11 @@ label {
   margin-top: 1rem;
 }
 
+.submit:hover {
+  background-color: rgb(15, 176, 34);
+  cursor: pointer;
+}
+
 body.light-mode {
   background-color: var(--light);
   color: var(--text_dark);
