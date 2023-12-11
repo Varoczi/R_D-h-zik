@@ -15,8 +15,11 @@
   </head>
   <body>
     <nav class="inverse">
-      <div class="gomb">
-        <a href="#footer"> Kattints ide hogy legörgess </a>
+      <div class="button">
+        <a class="nav" href="#footer"> Kattints ide hogy legörgess </a>
+      </div>
+      <div>
+        <button type="button" onclick="toggleLightMode()"><span>🌙</span> Dark Mode</button>
       </div>
     </nav>
     <article>
@@ -27,17 +30,17 @@
         <span class="highlight">Az Utopia sokak szerint máris az év albuma</span>, mások állítják,
         hogy egy csilivili palota, ami kívül impozáns ugyan, belül üres és
         tartalmatlan. Sok kérdés felmerül. Megérte-e várni rá? Értelmezhető-e a
-        lemez Kanye West szerepe nélkül? Mire elég a precíz, okosan kiszámolt
-        promóció, és utópia-e ez egyáltalán? Vagy épp ellenkezőleg? A Telex
-        After csütörtöki adásában ezekre keressük a választ.
+        lemez <a href="#Kanye">Kanye West</a> szerepe nélkül? Mire elég a precíz, okosan kiszámolt
+        promóció, és utópia-e ez egyáltalán? Vagy épp ellenkezőleg? <a href="https://youtu.be/5e8Xt2UV-vc">A Telex
+        After csütörtöki adásában ezekre keressük a választ.</a>
       </h3>
-      <div class="sav">
+      <div class="bar" id="Trav">
         <img
           class="travis"
           alt="Travis Scott"
           src="https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Travis_Scott_-_Utopia.png/220px-Travis_Scott_-_Utopia.png"
         />
-        <p>
+        <p class="margin-top">
           A most 32 éves,
           <span class="highlight">többszörös Grammy-jelölt Travis Scott</span> Houstonból indult,
           akárcsak celebkollégája, Beyoncé, aki a rapper új lemezén is szerepel.
@@ -139,16 +142,16 @@
         ahogy azt a Utopia-óriásplakátok ironikusan hirdették, van, aki pedig
         Drake hotelszobájában.
       </p>
-      <p>
+      <p id="Kanye">
         Ahogy az az After adásában is felmerül, a közvélemény a Utopia
         megjelenése óta arról beszél, hogy ez a lemez lényegében a Yeezus
         második kiadása, Kanye West hatása pedig olyannyira elvitathatatlan,
         hogy az új lemez már-már a 2013-as album másolata. A valós kép ennél
         árnyaltabb:
-        <span class="highlight"
-          >West producerkedett a Thank God című dalon, a Telekinesist és God’s
-          Countryt pedig eredetileg a 2021-es Dondára szánták</span
-        >, a számokat viszont Travis Scott kapta kézhez befejezésre, amolyan
+        <span class="highlight">
+        West producerkedett a Thank God című dalon, a Telekinesist és God’s
+        Countryt pedig eredetileg a 2021-es Dondára szánták</span>, 
+        a számokat viszont Travis Scott kapta kézhez befejezésre, amolyan
         kivételezett örökösként. A legérdekesebb pedig a kulcsdalnak számító
         Modern Jam sztorija. A számhoz a Yeezusről származó I Am a God egyik
         eredeti, tíz évvel ezelőtti verzióját használták újra, amit még 2013-ban
@@ -166,8 +169,8 @@
         lemez első élő előadása alatt augusztus 7-én a római Circus Maximus
         romjai közt, amikor meglepetésvendégként <span class="highlight">színpadra hívta</span> az
         antiszemita botrányát is túlélő (?) <span class="highlight">Westet</span>, majd így szólt:
-        „Kanye West nélkül nem lenne Utopia. Kanye West nélkül Travis Scott
-        sincs.”
+        „Kanye West nélkül nem lenne Utopia. West nélkül 
+        <a href="#Trav">Travis Scott</a> sincs.”
       </p>
       <p>Az adásban szóba kerül még:</p>
       <ul>
@@ -191,8 +194,8 @@
       <form name="Cikk küldése ismerősnek" action="" autocomplete="on">
         <fieldset>
           <legend>Cikk küldése ismerősnek</legend>
-          <label for="name">*Név:</label
-          ><input type="text" id="name" name="name" required />
+          <label for="name">*Név:</label>
+          <input type="text" id="name" name="name" required />
           <label for="tel">Telefon:</label
           ><input type="tel" id="tel" name="tel" />
           <label for="email">*E-mail:</label
@@ -206,9 +209,10 @@
       </form>
     </div>
     <footer class="inverse" id="footer">
-      <div class="gomb">
-        <a href="#up"> Kattints ide hogy felgörgess </a>
+      <div class="button">
+        <a class="nav" href="#up"> Kattints ide hogy felgörgess </a>
       </div>
     </footer>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
