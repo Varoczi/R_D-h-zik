@@ -15,15 +15,19 @@
   </head>
   <body>
     <nav class="inverse">
+      <div>
+        <button class="modeswitch" type="button" onclick="toggleLightMode()"><span>🌙</span> Dark Mode</button>
+      </div>
       <div class="button">
         <a class="nav" href="#footer"> Kattints ide hogy legörgess </a>
       </div>
       <div>
-        <button type="button" onclick="toggleLightMode()"><span>🌙</span> Dark Mode</button>
+        <input class="search" type="text" placeholder="Search..">
       </div>
     </nav>
-    <article>
+    <article id="article">
       <h1>Megérte várni Travis Scott visszatérésére?</h1>
+        <span id="time"></span>
       <h3>
         Öt év kihagyás után új lemezzel tért vissza Travis Scott, korunk
         egyértelműen egyik legnépszerűbb rappere.

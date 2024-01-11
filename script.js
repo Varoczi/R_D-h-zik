@@ -19,3 +19,15 @@ function toggleLightMode() {
     const modeSwitchButton = document.querySelector('.mode-switch');
     modeSwitchButton.classList.toggle('light-mode');
 }
+
+function percSzamitas () {
+
+    const text = document.getElementById("article").innerText;
+    const speed = 250;    /**   225 szó per perc   */
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / speed);
+
+    document.getElementById("time").innerText = "Olvasási idő: " + time + " perc";
+}
+
+percSzamitas();

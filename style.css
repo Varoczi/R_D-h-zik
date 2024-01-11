@@ -44,12 +44,22 @@ article {
 nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 } 
+
+.modeswitch {
+  margin: 3rem;
+}
+
+.search {
+  border: 0;
+  margin: 3rem;
+}
 
 h1 {
   text-align: center;
   font-size: 2.6rem;
-  margin: 3rem auto 4rem auto;
+  margin: 3rem auto 1rem auto;
   line-height: 100%;
 }
 
@@ -183,4 +193,10 @@ body.light-mode footer {
 body.light-mode nav a,
 body.light-mode footer a {
   color: black;
+}
+
+#time {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
 }
