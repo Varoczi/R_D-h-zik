@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    html {
+        margin: 0rem;
+    }
+    body {
+        background-color: rgb(11, 7, 10);;
+    }
+
+
+    .form {
+      margin: 2rem;
+    }
+
+    label {
+      color: rgb(224, 224, 224);
+    }
+
+    .submit {
+      border: 0;
+      border-radius: 10rem;
+      width: 5rem;
+      height: 1.5rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="form">
+    <form name="Cikk küldése ismerősnek" action="" autocomplete="on">
+      <fieldset>
+        <legend class="text-light">Cikk küldése ismerősnek</legend>
+        
+        <div class="form-group">
+          <label for="name">*Név:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="tel">Telefon:</label>
+          <input type="tel" class="form-control" id="tel" name="tel">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">*E-mail:</label>
+          <input type="email" class="form-control" required id="email" name="email">
+        </div>
+        
+        <div class="form-group">
+          <label for="age">Kor:</label>
+          <input type="number" class="form-control" id="age" name="age">
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Üzenet:</label>
+          <input type="text" class="form-control" id="message" name="message">
+        </div>
+        
+        <button type="submit" class="btn btn-success" value="Beküld">Beküld</button>
+      </fieldset>
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

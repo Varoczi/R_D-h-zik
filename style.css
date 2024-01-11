@@ -16,6 +16,13 @@
   }
 }
 
+:root {
+  --dark:rgb(11, 7, 10);
+  --light: rgba(230, 241, 251, 0.992);
+  --text: rgb(224, 224, 224);
+  --text_dark: rgb(28, 27, 27);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -23,14 +30,14 @@ html {
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(11, 7, 10);
+  background-color: var(--dark);
   font-size: 1.15rem;
 }
 
 article {
   margin-left: 1rem;
   margin-right: 1rem;
-  color: rgb(224, 224, 224);
+  color: var(--text);
 }
 
 
@@ -78,7 +85,7 @@ p {
 }
 
 legend {
-    color: rgb(224, 224, 224);
+    color: var(--text);
     margin-bottom: 0.5rem;
 }
 
@@ -112,7 +119,7 @@ a.nav{
 }
 
 .inverse {
-  background-color: rgb(11, 7, 10);
+  background-color: var(--dark);
   filter: invert(1);
   height: 4rem;
 }
@@ -127,6 +134,9 @@ a.nav{
   align-items: center;
 }
 
+footer .button {
+  margin-top: 0rem;
+}
 .form {
   display: flex;
   margin: 2rem;
@@ -140,7 +150,7 @@ input {
 }
 
 label {
-  color: rgb(224, 224, 224);
+  color: var(--text);
 }
 
 .submit {
@@ -152,18 +162,23 @@ label {
   margin-top: 1rem;
 }
 
+.submit:hover {
+  background-color: rgb(15, 176, 34);
+  cursor: pointer;
+}
+
 body.light-mode {
-  background-color: aliceblue;
-  color: rgb(28, 27, 27);
+  background-color: var(--light);
+  color: var(--text_dark);
 }
 
 .light-mode {
-  color: rgb(28, 27, 27);
+  color: var(--text_dark);
 }
 
 body.light-mode nav,
 body.light-mode footer {
-  background-color: aliceblue;
+  background-color: var(--light);
 }
 
 body.light-mode nav a,
