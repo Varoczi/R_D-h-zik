@@ -38,6 +38,7 @@ article {
   margin-left: 1rem;
   margin-right: 1rem;
   color: var(--text);
+  text-align: justify;
 }
 
 
@@ -199,4 +200,10 @@ body.light-mode footer a {
   display: flex;
   justify-content: center;
   margin-bottom: 4rem;
+}
+
+.search-highlight {
+  background-color: beige;
+  color: black;
+  text-decoration: underline;
 }
