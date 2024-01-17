@@ -73,3 +73,43 @@ function highlightText(element, content, searchText) {
     element.innerHTML = content;
     processNodes(element);
 }
+
+
+const authorCardTemplate = document.querySelector("[data-author-template]");
+const authorCardContainer = document.querySelector("[author-card]");
+const generateButton = document.querySelector("#generate-btn")
+
+fetch("https://jsonplaceholder.typicode.com/users")
+    .then(response => response.json())
+    .then(data => {
+         data.forEach(user => {
+         const card = authorCardTemplate.content.cloneNode(true).children[0]
+
+         const name = card.querySelector("[data-name]")
+         const email = card.querySelector("[data-email]")
+         const tel = card.querySelector("[data-tel]")
+         const comp = card.querySelector("[data-comp]")
+
+            
+         if (user.id === userID) {
+            name.textContent = user.name
+            email.innerHTML = `<a href="mailto:${user.email}">${user.email}</a>`;
+            tel.textContent = user.phone
+            comp.textContent = user.company.name
+         }
+
+        authorCardContainer.append(card)
+    })
+
+});
+
+let userID = Math.ceil(Math.random() * 10);
+console.log(userID);
+
+generateButton.addEventListener("click", () => {
+    let userID = Math.ceil(Math.random() * 10);
+});
+
+generateButton.click();
+
+//* a gombot később csinálom */

@@ -139,14 +139,16 @@ a.nav{
   height: 3rem;
   padding: 0.5rem 1rem;
   margin: 1rem 1rem;
-  border-radius: 20rem;
   justify-content: center;
   align-items: center;
 }
 
 footer .button {
   margin-top: 0rem;
+  justify-content: center;
+  align-items: center;
 }
+
 .form {
   display: flex;
   margin: 2rem;
@@ -206,4 +208,33 @@ body.light-mode footer a {
   background-color: beige;
   color: black;
   text-decoration: underline;
+}
+
+#generate-btn{
+  background-color: beige;
+  color: black;
+  font-family: inherit;
+  font-size: 2rem;
+  border:none;
+  padding: 0.8rem 1.2rem;
+  margin: 1.5rem 1rem 3rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card {
+  color: var(--text);
+  margin: 1rem;
+}
+
+.card > div {
+  margin-bottom: 0.6rem ;
+}
+
+.card-header {
+  color: var(--text);
+  font-weight: 900;
+  text-decoration: underline;
+  font-size: 1.35rem;
+  margin: 3rem 1rem 2rem 1rem;
 }

@@ -194,6 +194,18 @@
         </li>
       </ul>
     </article>
+    <div class="card-header">A szerző adatai:</div>
+    <div author-card></div>
+    <template data-author-template>
+      <div class="card">
+        <div class="id" ID></div>
+        <div class="writer-name" data-name></div>
+        <div class="writer-email" data-email></div>
+        <div class="writer-tel" data-tel></div>
+        <div class="writer-comp" data-comp></div>
+      </div>
+    </template>
+    <button type = "button" id = "generate-btn">Új szerző</button>
     <div class="form">
       <form name="Cikk küldése ismerősnek" action="" autocomplete="on">
         <fieldset>
