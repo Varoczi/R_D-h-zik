@@ -15,15 +15,19 @@
   </head>
   <body>
     <nav class="inverse">
+      <div>
+        <button class="modeswitch" type="button" onclick="toggleLightMode()"><span>🌙</span> Dark Mode</button>
+      </div>
       <div class="button">
         <a class="nav" href="#footer"> Kattints ide hogy legörgess </a>
       </div>
       <div>
-        <button type="button" onclick="toggleLightMode()"><span>🌙</span> Dark Mode</button>
+        <input class="search" type="text" placeholder="Search..">
       </div>
     </nav>
-    <article>
+    <article id="article">
       <h1>Megérte várni Travis Scott visszatérésére?</h1>
+        <span id="time"></span>
       <h3>
         Öt év kihagyás után új lemezzel tért vissza Travis Scott, korunk
         egyértelműen egyik legnépszerűbb rappere.
@@ -190,20 +194,32 @@
         </li>
       </ul>
     </article>
+    <div class="card-header">A szerző adatai:</div>
+    <div author-card></div>
+    <template data-author-template>
+      <div class="card">
+        <div class="id" ID></div>
+        <div class="writer-name" data-name></div>
+        <div class="writer-email" data-email></div>
+        <div class="writer-tel" data-tel></div>
+        <div class="writer-comp" data-comp></div>
+      </div>
+    </template>
+    <button type = "button" id = "generate-btn">Új szerző</button>
     <div class="form">
       <form name="Cikk küldése ismerősnek" action="" autocomplete="on">
         <fieldset>
           <legend>Cikk küldése ismerősnek</legend>
           <label for="name">*Név:</label>
           <input type="text" id="name" name="name" required />
-          <label for="tel">Telefon:</label
-          ><input type="tel" id="tel" name="tel" />
-          <label for="email">*E-mail:</label
-          ><input type="email" required id="email" name="email" />
-          <label for="age">Kor:</label
-          ><input type="number" id="age" name="age" />
-          <label for="message">Üzenet:</label
-          ><input type="text" id="message" name="message" />
+          <label for="tel">Telefon:</label>
+          <input type="tel" id="tel" name="tel" />
+          <label for="email">*E-mail:</label>
+          <input type="email" required id="email" name="email" />
+          <label for="age">Kor:</label>
+          <input type="number" id="age" name="age" />
+          <label for="message">Üzenet:</label>
+          <input type="text" id="message" name="message" />
           <input class="submit" type="submit" value="Beküld" />
         </fieldset>
       </form>
