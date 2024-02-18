@@ -20,37 +20,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
   </head>
   <body>
-    <nav class="inverse">
-      <div>
+    <nav class="inverse" role="heading">
+      <div role="switch" aria-label="Ezen gomb megnyomásakor átvált az oldal másik színkombinációra">
         <button class="modeswitch" type="button" onclick="toggleLightMode()"><span>🌙</span> Dark Mode</button>
       </div>
-      <div class="button">
+      <div class="button" role="navigation">
         <a class="nav" href="#footer"> Kattints ide hogy legörgess </a>
       </div>
-      <div>
-        <input class="search" type="text" placeholder="Search..">
+      <div role="searchbox">
+        <input class="search" type="text" placeholder="Search.." role="search">
       </div>
     </nav>
     <article id="article">
       <h1>Megérte várni Travis Scott visszatérésére?</h1>
-        <span id="time"></span>
+        <span id="time" role="timer"></span>
       <h3>
         Öt év kihagyás után új lemezzel tért vissza Travis Scott, korunk
         egyértelműen egyik legnépszerűbb rappere.
         <span class="highlight">Az Utopia sokak szerint máris az év albuma</span>, mások állítják,
         hogy egy csilivili palota, ami kívül impozáns ugyan, belül üres és
         tartalmatlan. Sok kérdés felmerül. Megérte-e várni rá? Értelmezhető-e a
-        lemez <a href="#Kanye">Kanye West</a> szerepe nélkül? Mire elég a precíz, okosan kiszámolt
-        promóció, és utópia-e ez egyáltalán? Vagy épp ellenkezőleg? <a href="https://youtu.be/5e8Xt2UV-vc">A Telex
+        lemez <a href="#Kanye" role="link">Kanye West</a> szerepe nélkül? Mire elég a precíz, okosan kiszámolt
+        promóció, és utópia-e ez egyáltalán? Vagy épp ellenkezőleg? <a href="https://youtu.be/5e8Xt2UV-vc" role="link">A Telex
         After csütörtöki adásában ezekre keressük a választ.</a>
       </h3>
-      <div class="bar" id="Trav">
+      <div class="bar" id="Trav" role="separator">
         <img
           class="travis"
           alt="Travis Scott"
+          role="img"
           src="https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Travis_Scott_-_Utopia.png/220px-Travis_Scott_-_Utopia.png"
         />
-        <p class="margin-top">
+        <p class="margin-top" role="text">
           A most 32 éves,
           <span class="highlight">többszörös Grammy-jelölt Travis Scott</span> Houstonból indult,
           akárcsak celebkollégája, Beyoncé, aki a rapper új lemezén is szerepel.
@@ -61,7 +62,7 @@
           duókban (The Classmates, The Graduates) dolgozott producerként és a
           MySpace-re töltögette fel első próbálkozásaikat.
         </p>
-        <p>
+        <p role="text">
           Korai karriertörténete sorsszerűen épp úgy alakult, mint sok más
           rapperé: nagyvárosokban próbált szerencsét, haverok kanapéján és
           matracain szállt meg New York és Los Angeles között ingázva, otthagyta
@@ -75,7 +76,7 @@
           jogi huzavonát indítva.
         </p>
       </div>
-      <p>
+      <p role="text">
         A Telex After adásában is felidézzük, hogy a 2015-ös, Rodeo című
         debütáló albumán (amit két ígéretes mixtape előzött meg) már
         <span class="highlight"> Bieber, The Weeknd és maga Kanye West is közreműködött</span> más
@@ -86,24 +87,24 @@
         (Kylie Jennerrel két közös gyerekük is van), ami szintén egyértelmű
         ugrást jelent a karrierranglétrán az amerikai szórakoztatóiparban.
       </p>
-      <p>
+      <p role="text">
         Pozíciója még annak ellenére sem ingott meg, hogy a rapper
         szülővárosában rendezett Astroworld fesztiválon 2021-ben kialakult
-        tömegkatasztrófa után perek sokasága hullott a nyakába, és – bár nem
-        ítélték el – közvetetten felelőssé tették tíz ember haláláért.
+        tömegkatasztrófa után perek sokasága hullott a nyakába, és - bár nem
+        ítélték el - közvetetten felelőssé tették tíz ember haláláért.
       </p>
-      <p>
+      <p role="text">
         Visszatérése olajozottan zajlott, a két évvel ezelőtti tragédia előtt
         már emlegetett, mégis sokáig tologatott Utopiával pedig végleg
         bebetonozta magát. Pláne, hogy lemeze olyan jól nyitott
-        <span class="highlight"
-          >(128 millió lejátszás a megjelenés napján, 78 millió a második napon,
-          ami szinte példátlan)</span
-        >, hogy azzal rögtön rekordot állított fel az idei megjelenések közt,
+        <span class="highlight">
+        (128 millió lejátszás a megjelenés napján, 78 millió a második napon,
+        ami szinte példátlan)</span>
+        , hogy azzal rögtön rekordot állított fel az idei megjelenések közt,
         illetve felkerült a valaha volt top öt legerősebb debütálás listájára,
         amin csak Drake és Taylor Swift előzi őt.
       </p>
-      <p>
+      <p role="text">
         Kanye West csúcsműnek tartott My Beautiful Dark Twisted Fantasy című
         lemeze óta zeneipari trend és kísérlet olyan monumentális blockbuster
         albumokat csinálni minél több sztárral, amik úgy funkcionálnak, mint egy
@@ -116,7 +117,7 @@
         produkciójának pedig már ez a fajta kuráció is a kulcsa: tudja, kiket
         ültessen egy stúdióba egymással.
       </p>
-      <p>
+      <p role="text">
         Nem túlzás állítani, hogy Travis Scottot imádja a kapitalizmus, a
         gigacégek aranytojást tojó tyúkja, akivel ha együtt dolgozol, tiéd a
         kasszasiker. A rappernek volt már saját <span class="highlight">McDonald’s</span>-menüje,
@@ -127,7 +128,7 @@
         figyelik, az ilyen és ehhez hasonló társulások pedig okosan kifundált
         stratégiát követve valósulnak meg.
       </p>
-      <p>
+      <p role="text">
         Pont ilyen szellemben startolt el a Utopia masszív, lépcsőzetes kampánya
         is rejtélyes bőröndökkel, bújtatott üzenetet közvetítő óriásplakátokkal
         és egy szájbarágós Beatles-parafrázissal. Az albumhoz dukáló, a világ
@@ -136,7 +137,7 @@
         Korine, Gaspar Noé vagy Nicolas Winding Refn. Szóval ez kétségtelenül
         egy grandiózus projekt.
       </p>
-      <p>
+      <p role="text">
         Ilyesmi dilemma lengi körül a Utopiát, amihez ügyes narratívát kreáltak
         egy utópiának álcázott disztópiáról, ezt a sztorit viszont nem a dalok
         és melódiák adják el közvetlenül, hanem épp fordítva:
@@ -144,7 +145,7 @@
         nem esne le a lényeg, megteszik ugyanezt TikTok-felhasználók 30
         másodpercben.
       </p>
-      <p>
+      <p role="text">
         Egy opcionális, egyéni értelmezésen alapuló, idézőjeles utópia épült a
         szemünk előtt, az viszont ránk van bízva, hogy mit kezdünk vele. Ugyanis
         mindenkinek más a saját, bőszen kergetett ideális valósága. Mindenki
@@ -152,7 +153,7 @@
         ahogy azt a Utopia-óriásplakátok ironikusan hirdették, van, aki pedig
         Drake hotelszobájában.
       </p>
-      <p id="Kanye">
+      <p id="Kanye" role="text">
         Ahogy az az After adásában is felmerül, a közvélemény a Utopia
         megjelenése óta arról beszél, hogy ez a lemez lényegében a Yeezus
         második kiadása, Kanye West hatása pedig olyannyira elvitathatatlan,
@@ -167,14 +168,14 @@
         eredeti, tíz évvel ezelőtti verzióját használták újra, amit még 2013-ban
         együtt rakott össze Travis Scott, Kanye West, Mike Dean és a Daft Punk.
       </p>
-      <p>
+      <p role="text">
         Nem mindegy hát, hogy melyik fiókba rakjuk a rapper-producert. Kanye
         Westnek ugyanis vannak protezsáltjai, mint az idei Szigeten is fellépő
         070 Shake, és vele közel egyenértékű kollégái és partnerei is. Travis
         sokkal inkább az utóbbi, aki így nem másol, hanem átvesz és végre
         megfőzi azt, aminek a receptjét anno ő is papírra vetette.
       </p>
-      <p>
+      <p role="text">
         Különleges státuszát kihasználva minderre csak ráerősített a Utopia
         lemez első élő előadása alatt augusztus 7-én a római Circus Maximus
         romjai közt, amikor meglepetésvendégként <span class="highlight">színpadra hívta</span> az
@@ -183,37 +184,37 @@
         <a href="#Trav">Travis Scott</a> sincs.”
       </p>
       <p>Az adásban szóba kerül még:</p>
-      <ul>
+      <ul role="list">
         <li>Meg tudott-e újulni Travis Scott az évek során?</li>
-        <li>
+        <li role="listitem">
           Rendben van-e a Kanye Westtel való haverkodás az előadó náci
           megnyilvánulásai után?
         </li>
-        <li>Mi a Travis Scott-recept sikere?</li>
-        <li>Producerként vagy rapperként erősebb Travis Scott?</li>
-        <li>Sikerült-e kimozdítania közreműködőit a komfortzónájukból?</li>
-        <li>Ki a legmeglepőbb közreműködő a lemezen?</li>
-        <li>Önreflexív album tud-e lenni a Utopia?</li>
-        <li>
+        <li role="listitem">Mi a Travis Scott-recept sikere?</li>
+        <li role="listitem">Producerként vagy rapperként erősebb Travis Scott?</li>
+        <li role="listitem">Sikerült-e kimozdítania közreműködőit a komfortzónájukból?</li>
+        <li role="listitem">Ki a legmeglepőbb közreműködő a lemezen?</li>
+        <li role="listitem">Önreflexív album tud-e lenni a Utopia?</li>
+        <li role="listitem">
           Ideális, tökéletes jövőképet fest a rapper, vagy mindez csak egy
           trükk?
         </li>
       </ul>
     </article>
-    <div class="card-header">A szerző adatai:</div>
+    <div class="card-header" role="" id="author">A szerző adatai:</div>
     <div author-card></div>
     <template data-author-template>
-      <div class="card">
-        <div class="id" ID></div>
-        <div class="writer-name" data-name></div>
-        <div class="writer-email" data-email></div>
-        <div class="writer-tel" data-tel></div>
-        <div class="writer-comp" data-comp></div>
+      <div class="card" role="list">
+        <div class="id" ID role="listitem" aria-labelledby="author"></div>
+        <div class="writer-name" data-name role="listitem" aria-labelledby="author"></div>
+        <div class="writer-email" data-email role="listitem" aria-labelledby="author"></div>
+        <div class="writer-tel" data-tel role="listitem" aria-labelledby="author"></div>
+        <div class="writer-comp" data-comp role="listitem" aria-labelledby="author"></div>
       </div>
     </template>
     <button type = "button" id = "generate-btn">Új szerző</button>
-    <div class="form">
-      <form name="Cikk küldése ismerősnek" action="" autocomplete="on">
+    <div class="form" role="separator">
+      <form name="Cikk küldése ismerősnek" action="" autocomplete="on" role="form">
         <fieldset>
           <legend>Cikk küldése ismerősnek</legend>
           <label for="name">*Név:</label>
@@ -226,14 +227,14 @@
           <input type="number" id="age" name="age" />
           <label for="message">Üzenet:</label>
           <input type="text" id="message" name="message" />
-          <input class="submit" type="submit" value="Beküld" />
+          <input class="submit" type="submit" value="Beküld" aria-label="Form beküldése"/>
         </fieldset>
       </form>
     </div>
-    <iframe src="form.html" width="100%" height="576px" frameborder="0"></iframe>
+    <iframe src="form.html" width="100%" height="576px" frameborder="0" role="form"></iframe>
     <footer class="inverse" id="footer">
-      <div class="button">
-        <a class="nav" href="#up"> Kattints ide hogy felgörgess </a>
+      <div class="button" role="navigation">
+        <a class="nav" href="#up" role="button"> Kattints ide hogy felgörgess </a>
       </div>
     </footer>
     <script type="text/javascript" src="script.js"></script>
