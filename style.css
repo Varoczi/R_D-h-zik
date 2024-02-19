@@ -5,6 +5,13 @@
   .bar p.margin-top {
     margin-top: 3rem;
   }
+  .search {
+    width: 6rem;
+  }
+  .modeswitch {
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -13,6 +20,10 @@
   }
   nav {
     justify-content: center;
+  }
+  nav .nav {
+    margin: 0.1rem auto;
+    font-size: 0.8rem;
   }
 }
 

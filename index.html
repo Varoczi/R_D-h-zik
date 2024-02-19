@@ -22,13 +22,13 @@
   <body>
     <nav class="inverse" role="heading">
       <div role="switch" aria-label="Ezen gomb megnyomásakor átvált az oldal másik színkombinációra">
-        <button class="modeswitch" type="button" onclick="toggleLightMode()"><span>🌙</span> Dark Mode</button>
+        <button tabindex="0" class="modeswitch" type="button" onclick="toggleLightMode()"><span>🌙</span> Dark Mode</button>
       </div>
       <div class="button" role="navigation">
-        <a class="nav" href="#footer"> Kattints ide hogy legörgess </a>
+        <a tabindex="0" class="nav" href="#footer"> Kattints ide hogy legörgess </a>
       </div>
       <div role="searchbox">
-        <input class="search" type="text" placeholder="Search.." role="search">
+        <input tabindex="0" class="search" type="text" placeholder="Search.." role="search">
       </div>
     </nav>
     <article id="article">
@@ -40,8 +40,8 @@
         <span class="highlight">Az Utopia sokak szerint máris az év albuma</span>, mások állítják,
         hogy egy csilivili palota, ami kívül impozáns ugyan, belül üres és
         tartalmatlan. Sok kérdés felmerül. Megérte-e várni rá? Értelmezhető-e a
-        lemez <a href="#Kanye" role="link">Kanye West</a> szerepe nélkül? Mire elég a precíz, okosan kiszámolt
-        promóció, és utópia-e ez egyáltalán? Vagy épp ellenkezőleg? <a href="https://youtu.be/5e8Xt2UV-vc" role="link">A Telex
+        lemez <a href="#Kanye" role="navigation">Kanye West</a> szerepe nélkül? Mire elég a precíz, okosan kiszámolt
+        promóció, és utópia-e ez egyáltalán? Vagy épp ellenkezőleg? <a tabindex="0" href="https://youtu.be/5e8Xt2UV-vc" role="link">A Telex
         After csütörtöki adásában ezekre keressük a választ.</a>
       </h3>
       <div class="bar" id="Trav" role="separator">
@@ -181,7 +181,7 @@
         romjai közt, amikor meglepetésvendégként <span class="highlight">színpadra hívta</span> az
         antiszemita botrányát is túlélő (?) <span class="highlight">Westet</span>, majd így szólt:
         „Kanye West nélkül nem lenne Utopia. West nélkül 
-        <a href="#Trav">Travis Scott</a> sincs.”
+        <a href="#Trav" role="navigation">Travis Scott</a> sincs.”
       </p>
       <p>Az adásban szóba kerül még:</p>
       <ul role="list">
@@ -212,7 +212,7 @@
         <div class="writer-comp" data-comp role="listitem" aria-labelledby="author"></div>
       </div>
     </template>
-    <button type = "button" id = "generate-btn">Új szerző</button>
+    <button type = "button" id = "generate-btn" tabindex="0">Új szerző</button>
     <div class="form" role="separator">
       <form name="Cikk küldése ismerősnek" action="" autocomplete="on" role="form">
         <fieldset>
@@ -231,7 +231,7 @@
         </fieldset>
       </form>
     </div>
-    <iframe src="form.html" width="100%" height="576px" frameborder="0" role="form"></iframe>
+    <!-- <iframe src="form.html" width="100%" height="576px" frameborder="0" role="form"></iframe> -->
     <footer class="inverse" id="footer">
       <div class="button" role="navigation">
         <a class="nav" href="#up" role="button"> Kattints ide hogy felgörgess </a>
