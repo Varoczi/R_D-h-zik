@@ -107,7 +107,7 @@ let userID = Math.ceil(Math.random() * 10);
 console.log(userID);
 
 generateButton.addEventListener("click", () => {
-    let userID = Math.ceil(Math.random() * 10);
+    userID = Math.ceil(Math.random() * 10);
 });
 
 generateButton.click();
